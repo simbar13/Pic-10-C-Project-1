@@ -218,3 +218,15 @@ Player::Player(int m)
 	money = m;
 }
 
+void Player::deal(Card c)
+{
+	myHand.newCard(c);
+}
+
+void Player::alter(int value, bool win)
+{
+	if (win)
+		money += value;
+	else
+		money -= value;
+}
