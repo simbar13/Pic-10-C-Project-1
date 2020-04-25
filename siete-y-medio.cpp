@@ -34,6 +34,40 @@ int main(){
 			cout << "You cannot bet more money than you have"<<endl;
 			continue;
 		}
+		string add_card = "yes";
+		Card* first = new Card();
+		user->deal(first);
+		//here we must produce an output similar to the first if statement but with only the first card
+		cout << "Your first card is:";
+		//print first card
+		cout << endl << "Your initial total is:";
+		//print initial value
+
+		while (add_card == "yes")
+		{
+			if (user->my_hand()->total_cards >1)
+			{
+				cout << "Your hand contains:";
+				//here we list the cards in the hand
+				cout << endl << "Your total point value is:";
+				//here we list the total point value
+			}
+			//if the total hand value is less than 7.5:
+			cout << endl << "Would you like another card? (y/n)";
+			char more;
+			cin >> more;
+			if (more == 'n')
+			{
+				add_card = "no";
+				continue;
+			}
+			//now it is determined that the player would indeed like a new card
+			Card* c = new Card();
+			user->deal(c);
+			//now if the total hand value is not less than 7.5:
+			//cout something like youve reeached 7.5 you dont draw anymore
+			
+		}
 
 	}
 	return 0;
