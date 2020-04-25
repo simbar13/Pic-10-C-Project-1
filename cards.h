@@ -151,6 +151,8 @@ public:
 	void deal(Card c);
 
 	void alter(int value, bool win);
+	
+	int money_left() { return money; }
 
 	//true is win, false is loss
 
