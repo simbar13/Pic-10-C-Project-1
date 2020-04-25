@@ -127,6 +127,10 @@ int main() {
 		dealer->my_hand()->reset();
 
 	}
+	if (user->money_left() <= 0)
+		cout << endl << endl << "You lost all of your money gambling, seek help!";
+	if (dealer->money_left() <= 0)
+		cout << endl << endl << "You won all of the casinos money, run, the mob is coming!";
 
 	return 0;
 }
