@@ -39,18 +39,18 @@ int main(){
 		user->deal(first);
 		//here we must produce an output similar to the first if statement but with only the first card
 		cout << "Your first card is:";
-		//print first card
+		user->my_hand()->listCards();
 		cout << endl << "Your initial total is:";
-		//print initial value
+		cout << user->my_hand()->total_value();
 
 		while (add_card == "yes")
 		{
-			if (user->my_hand()->total_cards >1)
+			if (user->my_hand()->total_cards() >1)
 			{
 				cout << "Your hand contains:";
-				//here we list the cards in the hand
+				user->my_hand()->listCards();
 				cout << endl << "Your total point value is:";
-				//here we list the total point value
+				cout << user->my_hand()->total_value();
 			}
 			//if the total hand value is less than 7.5:
 			cout << endl << "Would you like another card? (y/n)";
