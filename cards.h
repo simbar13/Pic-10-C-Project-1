@@ -118,8 +118,9 @@ public:
 
 	void newCard();
 
-	double getCount() { return total_count; }
+	void listCards();
 
+	double total_value();
 	// You decide what functions you'll need...
 
 
