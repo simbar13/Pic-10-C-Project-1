@@ -7,6 +7,8 @@
 
 Additionally, the program will create a text file called gamelog.txt which contains basic information about each game being played.  
 
+Below are test cases that detail the progress of my code, any bugs or formatting issues are found and mentioned here, and then addressed in the code-containing files.
+
 First test case:
 ```
 You Have $100
