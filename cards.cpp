@@ -209,7 +209,7 @@ void Hand::listCards()
 {
 	for (int i = 0; i < in_hand.size(); i++)
 	{
-		cout << endl<<in_hand[i]->get_spanish_rank() << " de " << in_hand[i]->get_spanish_suit();
+		cout << "  "<<in_hand[i]->get_spanish_rank() << " de " << in_hand[i]->get_spanish_suit();
 	}
 }
 
