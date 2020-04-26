@@ -149,7 +149,7 @@ Enter your bet:
 ```
 The previous bug was fixed by moving two reset functions, but now a bug appears that terminates the round when the player does not ask for a new card.
 
-Test Case 4:
+Test Case 4 part 2:
 ```
 You Have $100
 Enter your bet:50
