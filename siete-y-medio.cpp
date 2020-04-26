@@ -44,7 +44,7 @@ int main() {
 		//here we must produce an output similar to the first if statement but with only the first card
 		cout << "Your first card is:";
 		user->my_hand()->listCards();
-		cout << endl << "Your initial total is:";
+		cout << endl << "Your initial total is: ";
 		cout << user->my_hand()->total_value();
 
 		while (add_card == "yes")
@@ -53,12 +53,12 @@ int main() {
 			{
 				cout << "Your hand contains:";
 				user->my_hand()->listCards();
-				cout << endl << "Your total point value is:";
+				cout << endl << "Your total point value is: ";
 				cout << user->my_hand()->total_value();
 			}
 			if (user->my_hand()->total_value() <= 7.5)
 			{
-				cout << endl << "Would you like another card? (y/n)";
+				cout << endl << "Would you like another card? (y/n) ";
 				char more;
 				cin >> more;
 				if (more == 'n')
@@ -87,7 +87,7 @@ int main() {
 		dealer->deal(dfirst);
 		cout << "The Dealer's first card is:";
 		dealer->my_hand()->listCards();
-		cout << endl << "The Dealer's initial total is:";
+		cout << endl << "The Dealer's initial total is: ";
 		cout << dealer->my_hand()->total_value();
 		if (dealer->my_hand()->total_value() < 5.5)
 		{
@@ -100,7 +100,7 @@ int main() {
 				dealer->deal(d);
 				cout << "The Dealer's hand contains:";
 				dealer->my_hand()->listCards();
-				cout << endl << "The Dealer's new total is:";
+				cout << endl << "The Dealer's new total is: ";
 				cout << dealer->my_hand()->total_value();
 
 			}
