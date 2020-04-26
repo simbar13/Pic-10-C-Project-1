@@ -23,6 +23,7 @@ int main() {
 	Player* user = new Player(100);
 	Player* dealer = new Player(900);
 	bool onwards = true;
+	srand(time(0));
 	while ((user->money_left() > 0) && (dealer_negative < 900))
 	{
 		//here is where all the game play happens
