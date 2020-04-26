@@ -96,5 +96,28 @@ You busted, the dealer wins!
 ```
 This appears to work as it is supposed to, but the output is large and some of the lines are not well formatted. 
 
-
+Third Test Case:
+```
+You Have $100
+Enter your bet:150
+You cannot bet more money than you have
+You Have $100
+Enter your bet:50
+Your first card is:  Sota de espadas
+Your initial total is: 0.5
+Would you like another card? (y/n) y
+Your hand contains:  Sota de espadas  Cinco de copas
+Your total point value is: 5.5
+Would you like another card? (y/n) y
+Your hand contains:  Sota de espadas  Cinco de copas  Siete de oros
+Your total point value is: 12.5
+You busted, the dealer wins!
+You Have $50
+Enter your bet:50
+Your first card is:  Sota de espadas  Cinco de copas  Siete de oros  As de copas
+Your initial total is: 13.5Your hand contains:  Sota de espadas  Cinco de copas  Siete de oros  As de copas
+Your total point value is: 13.5
+You busted, the dealer wins!
+```
+The formatting issues have been adressed, but there is now a bug that results after the player busts but still has money left, in this case the hand is not resetting
 
