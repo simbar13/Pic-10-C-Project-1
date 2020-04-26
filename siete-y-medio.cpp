@@ -93,7 +93,7 @@ int main() {
 		{
 			while (dealer->my_hand()->total_value() < 5.5)
 			{
-				cout << endl << "The Dealer will draw, press C followed by enter to continue";
+				cout << endl << "The Dealer will draw, press C followed by enter to continue ";
 				char hi;
 				cin >> hi;
 				Card* d = new Card();
