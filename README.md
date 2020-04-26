@@ -167,3 +167,63 @@ You Have $150
 Enter your bet:
 ```
 The hand no longer terminates, but somewhere a comparison was written incorrectly as the dealer won this hand but the program says the player did
+
+Test Case 5:
+```
+You Have $100
+Enter your bet:50
+Your first card is:  Tres de bastos
+Your initial total is: 3
+Would you like another card? (y/n) n
+The Dealer's first card is:  Tres de oros
+The Dealer's initial total is: 3
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Tres de oros  Caballo de espadas
+The Dealer's new total is: 3.5
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Tres de oros  Caballo de espadas  As de espadas
+The Dealer's new total is: 4.5
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Tres de oros  Caballo de espadas  As de espadas  As de copas
+The Dealer's new total is: 5.5
+The Dealer wins!
+You Have $50
+Enter your bet:50
+Your first card is:  Caballo de copas
+Your initial total is: 0.5
+Would you like another card? (y/n) y
+Your hand contains:  Caballo de copas  Rey de oros
+Your total point value is: 1
+Would you like another card? (y/n) y
+Your hand contains:  Caballo de copas  Rey de oros  Sota de bastos
+Your total point value is: 1.5
+Would you like another card? (y/n) y
+Your hand contains:  Caballo de copas  Rey de oros  Sota de bastos  Seis de espadas
+Your total point value is: 7.5
+Would you like another card? (y/n) n
+The Dealer's first card is:  Tres de copas
+The Dealer's initial total is: 3
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Tres de copas  Rey de oros
+The Dealer's new total is: 3.5
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Tres de copas  Rey de oros  Dos de copas
+The Dealer's new total is: 5.5
+You win!
+You Have $100
+Enter your bet:100
+Your first card is:  Cinco de oros
+Your initial total is: 5
+Would you like another card? (y/n) n
+The Dealer's first card is:  Rey de oros
+The Dealer's initial total is: 0.5
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  Rey de oros  Cinco de oros
+The Dealer's new total is: 5.5
+The Dealer wins!
+
+
+You lost all of your money gambling, seek help!
+```
+Everything appears to work smoothly, will run a couple more test cases and update if more problems arise
+
