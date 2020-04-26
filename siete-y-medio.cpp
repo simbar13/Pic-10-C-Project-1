@@ -26,6 +26,8 @@ int main() {
 	srand(time(0));
 	while ((user->money_left() > 0) && (dealer_negative < 900))
 	{
+		user->myhand()->reset();
+		dealer->myhand()->reset();
 		//here is where all the game play happens
 		cout << "You Have $";
 		cout << user->money_left();
@@ -124,8 +126,6 @@ int main() {
 			dealer->alter(player_bet, false);
 		}
 		//here we empty the players hand to prepare for the next round
-		user->my_hand()->reset();
-		dealer->my_hand()->reset();
 
 	}
 	if (user->money_left() <= 0)
