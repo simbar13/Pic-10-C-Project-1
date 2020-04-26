@@ -121,3 +121,28 @@ You busted, the dealer wins!
 ```
 The formatting issues have been adressed, but there is now a bug that results after the player busts but still has money left, in this case the hand is not resetting
 
+Test Case 4: (incomplete due to bug)
+```
+You Have $100
+Enter your bet:50
+Your first card is:  Tres de copas
+Your initial total is: 3
+Would you like another card? (y/n) y
+Your hand contains:  Tres de copas  Tres de espadas
+Your total point value is: 6
+Would you like another card? (y/n) y
+Your hand contains:  Tres de copas  Tres de espadas  Dos de oros
+Your total point value is: 8
+You busted, the dealer wins!
+You Have $50
+Enter your bet:50
+Your first card is:  Sota de oros
+Your initial total is: 0.5
+Would you like another card? (y/n) y
+Your hand contains:  Sota de oros  Dos de bastos
+Your total point value is: 2.5
+Would you like another card? (y/n) n
+You Have $50
+Enter your bet:
+```
+The previous bug was fixed by moving two reset functions, but now a bug appears that terminates the round when the player does not ask for a new card.
