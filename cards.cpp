@@ -205,7 +205,26 @@ void Hand::newCard(Card cd)
 	in_hand.push_back(cd);
 }
 
+void Hand::listCards()
+{
+	for (int i = 0; i < in_hand.size(); i++)
+	{
+		cout << "  "<<in_hand[i]->get_spanish_rank() << " de " << in_hand[i]->get_spanish_suit();
+	}
+}
 
+double Hand::total_value()
+{
+	double yeet = 0;
+	for (int i = 0; i < in_hand.size(); i++)
+	{
+		if (in_hand[i]->get_rank() < 8)
+			yeet += in_hand[i]->get_rank();
+		else
+			yeet += 0.5;
+	}
+	return yeet;
+}
 
    /* *************************************************
 	  Player class
@@ -218,3 +237,15 @@ Player::Player(int m)
 	money = m;
 }
 
+void Player::deal(Card c)
+{
+	myHand.newCard(c);
+}
+
+void Player::alter(int value, bool win)
+{
+	if (win)
+		money += value;
+	else
+		money -= value;
+}

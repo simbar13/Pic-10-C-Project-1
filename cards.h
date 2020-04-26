@@ -118,8 +118,9 @@ public:
 
 	void newCard();
 
-	double getCount() { return total_count; }
+	void listCards();
 
+	double total_value();
 	// You decide what functions you'll need...
 
 
@@ -151,6 +152,8 @@ public:
 	void deal(Card c);
 
 	void alter(int value, bool win);
+	
+	int money_left() { return money; }
 
 	//true is win, false is loss
 
