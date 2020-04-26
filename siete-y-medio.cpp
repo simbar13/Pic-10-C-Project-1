@@ -66,7 +66,7 @@ int main() {
 				if (more == 'n')
 				{
 					add_card = "no";
-					continue;
+
 				}
 				//now it is determined that the player would indeed like a new card
 				Card* c = new Card();
