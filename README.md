@@ -146,3 +146,24 @@ You Have $50
 Enter your bet:
 ```
 The previous bug was fixed by moving two reset functions, but now a bug appears that terminates the round when the player does not ask for a new card.
+
+Test Case 4:
+```
+You Have $100
+Enter your bet:50
+Your first card is:  Cuatro de copas
+Your initial total is: 4
+Would you like another card? (y/n) n
+The Dealer's first card is:  As de bastos
+The Dealer's initial total is: 1
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  As de bastos  Dos de espadas
+The Dealer's new total is: 3
+The Dealer will draw, press C followed by enter to continue c
+The Dealer's hand contains:  As de bastos  Dos de espadas  Tres de bastos
+The Dealer's new total is: 6
+You win!
+You Have $150
+Enter your bet:
+```
+The hand no longer terminates, but somewhere a comparison was written incorrectly as the dealer won this hand but the program says the player did
